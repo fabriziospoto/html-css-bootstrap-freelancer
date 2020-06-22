@@ -6,28 +6,38 @@
         <title>html-css-bootsrap-freelancer</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav class="container-fluid">
+        <nav class="navbar navbar-default nav-p text-uppercase navbar-fixed-top">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <p>Start Bootstrap</p>
-                    </div>
-                    <div class="col-md-1 col-sm-1 col-md-offset-8 col-sm-offset-8">
-                        <button type="button" class="btn btn-info button-p">Menu <span>&#8801;</span></button>
-                    </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed button-p" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span>MENU</span>
+                        <div class="icon-p">
+                            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                        </div>
 
+                    </button>
+                    <a class="navbar-brand" href="#">Start Bootstrap</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
         <header class="container-fluid">
             <div class="container">
                 <div class="row text-center">
-                    <div class="">
-                        <img class="img-responsive img-avatar"src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img class="img-avatar"src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar">
                         <h1>Start Bootstrap</h1>
                     </div>
                 </div>
@@ -54,23 +64,53 @@
                     </div>
                 </div>
                 <div id="portfolio-row"class="row">
-                    <div class="col-md-4 portfolio-img">
-                        <img src="" alt="Cabin">
+                    <div class="col-md-4">
+                        <div class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img class="img-responsive img-rounded" src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt="Cabin">
+                        </div>
                     </div>
-                    <div class="col-md-4 portfolio-img">
-                        <img src="" alt="Cake">
+                    <div class="col-md-4">
+                        <div class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img class="img-responsive img-rounded" src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png" alt="Cake">
+                        </div>
                     </div>
-                    <div class="col-md-4 portfolio-img">
-                        <img src="" alt="Circus">
+                    <div class="col-md-4">
+                        <div class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img class="img-responsive img-rounded" src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png" alt="Circus">
+                        </div>
                     </div>
-                    <div class="col-md-4 portfolio-img">
-                        <img src="" alt="Game">
+                    <div class="col-md-4">
+                        <div class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img class="img-responsive img-rounded" src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png" alt="Game">
+                        </div>
                     </div>
-                    <div class="col-md-4 portfolio-img">
-                        <img src="" alt="Safe">
+                    <div class="col-md-4">
+                        <div class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img class="img-responsive img-rounded" src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png" alt="Safe">
+                        </div>
                     </div>
-                    <div class="col-md-4 portfolio-img">
-                        <img src="" alt="Submarine">
+                    <div class="col-md-4">
+                        <div class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                            </div>
+                            <img class="img-responsive img-rounded" src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png" alt="Submarine">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,13 +149,26 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-contact">
-
+                    <div class="form-contact text-center">
+                        <div class="input-box">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Email Address">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Phone Number">
+                        </div>
+                        <div class="input-box-bottom">
+                            <input type="text" placeholder="Message">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="btn-contact">
-
+                    <div class="btn-contact text-center">
+                        <div class="btn-contact-p">
+                            <button type="button" class="btn btn-default btn-contactme">Send</button>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -128,6 +181,18 @@
                     </div>
                     <div class="col-md-4 col-xs- 12 border-footer">
                         <h3>Around The Web</h3>
+                        <div class="social">
+                            <i class="fab fa-facebook-f social-p"></i>
+                        </div>
+                        <div class="social">
+                            <i class="fab fa-twitter social-p"></i>
+                        </div>
+                        <div class="social">
+                            <i class="fab fa-linkedin-in social-p"></i>
+                        </div>
+                        <div class="social">
+                            <i class="fab fa-dribbble social-p"></i>
+                        </div>
                     </div>
                     <div class="col-md-4 col-xs- 12 border-footer">
                         <h3>About Freelancer</h3>
@@ -138,8 +203,11 @@
             </div>
         </footer>
         <div id="footer-bottom" class="container-fluid">
-            <div class="row text-center">
-                <p>Copyright © Your Website 2020</p>
+            <div class="container">
+                <div class="row text-center">
+                    <p>Copyright © Your Website 2020</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
