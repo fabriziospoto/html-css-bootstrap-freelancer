@@ -37,6 +37,14 @@
     line-height: 50px;
 }
 
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #1abc9c;
+}
+
 /* FINE NAV */
 
 /* HEADER */
@@ -315,11 +323,12 @@ footer p {
     border: 2px solid white;
     margin-right: 10px;
     margin-top: 15px;
+    line-height: 50px;
 }
 
-footer .social i{
+.social-p {
     color: white;
-    width: 20px;
+    font-size: 20px;
 }
 
 #freelance-quote {
@@ -339,20 +348,8 @@ footer .social i{
     line-height: 60px;
 }
 
-
-/* @media screen and (max-width: 786px) {
-    .nav-p {
-        height: 70px;
+@media screen and (max-width: 786px) {
+    .nav-p a.navbar-brand {
+        line-height: 1;
     }
-
-    .nav-p a,
-    .nav-p ul li a {
-        line-height: 70px;
-    }
-} */
-
-/* @media screen and (max-width: 786px) {
-    h1 {
-        line-height: 50px;
-    }
-} */
+}
